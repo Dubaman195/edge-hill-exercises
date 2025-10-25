@@ -46,4 +46,32 @@ def triangle_generator():
 
         print()  # Move to the next line after each row
 
-triangle_generator()
+
+"""Exercise 4: The while Loop - Menu-Driven Calculator"""
+
+def calculator():
+    q = ""
+    while q != "q":
+        print("--- Calculator Menu ---")
+        print("1. Add")
+        print("2. Subtract")
+        print("q. Quit")
+        q = input("Choose an option: ")
+
+        if q == "1":
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+            print(f"The sum is: {num1 + num2}")
+
+        elif q == "2":
+            num1 = float(input("Enter first number: "))
+            num2 = float(input("Enter second number: "))
+            print(f"The difference is: {num1 - num2}")
+
+        else:
+            if q != "q":
+                print("Invalid option, please try again.")
+        
+    print("Goodbye!")
+
+calculator()
