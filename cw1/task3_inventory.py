@@ -16,5 +16,6 @@ def load_inventory(filename):
     try:
         with open(filename,"r") as f:
             data = json.load(f)
+            return data
     except:
-        print("poop")
+        assert "Unable to load inventory"
